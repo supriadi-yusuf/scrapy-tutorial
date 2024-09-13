@@ -23,3 +23,9 @@ ex : scrapy crawl rwid
 
 menajalankan console untuk scrapy:
 scrapy shell [url]
+
+menyimpan output ke json :
+scrapy crawl [name] -o output.json
+
+menyimpan output ke csv :
+scrapy crawl [name] -o output.csv
