@@ -1,0 +1,25 @@
+install scrapy:
+pip install scrapy
+
+membuat project scrapy :
+command : scrapy startproject tutor
+kita akan fokus ke module spiders.
+module spiders adalah module yang di dalamnya kita akan membuat file-file spiders.
+di dalam file spider kita akan mendefinisikan method-method untuk
+mengambil data dari website.
+
+membuat skeleton spider :
+masuk ke folder project
+scrapy genspider [name] [host]
+contoh:
+cd tutor
+scrapy genspider rwid 167.172.70.208:9999
+
+menjalan spider:
+masuk ke folder project
+cd tutor
+scrapy crawl [name]
+ex : scrapy crawl rwid
+
+menajalankan console untuk scrapy:
+scrapy shell [url]
